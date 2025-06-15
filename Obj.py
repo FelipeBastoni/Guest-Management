@@ -28,3 +28,6 @@ class Cliente:
 
         return f"{self.rg}, {self.nomep}, {self.cll}, {self.divida}"
 
+
+
+#OLáaaa

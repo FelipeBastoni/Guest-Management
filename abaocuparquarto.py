@@ -5,14 +5,6 @@ from Obj import *
 
 
 
-
-
-
-
-
-
-
-
 def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, main, menu, janela):
 
     #reservando quarto
@@ -209,13 +201,6 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
             for x in range(len(clients)):
 
                 db[f"{x}"] = clients[x]
-
-
-
-
-
-
-
 
 
 

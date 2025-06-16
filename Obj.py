@@ -15,6 +15,9 @@ class Quarto:
         return f"{self.nome}, {self.preco}, {self.dispn}, {self.ocpant}"
 
 
+
+
+
 class Cliente:
 
     def __init__(self, rg, nomep, cll, divida):

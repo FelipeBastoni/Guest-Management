@@ -49,14 +49,6 @@ def abaadicionarquart(main, menu, quartos, guardconteudo):
 
 
 
-
-
-
-
-
-
-
-
     #adicionarquarto
 
     botaogeren = tk.Button(menu, width= 15, text="Adicionar Quarto", command= gerenc)

@@ -47,8 +47,8 @@ def abafechamento(main, menu, buscr, sla, clients):
 
 
     def abate():
+        
         valor = abtdivida.get()
-
         vl = float(valor)
 
         with shelve.open("data/Clientes.db") as db:

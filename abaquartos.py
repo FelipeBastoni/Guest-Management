@@ -4,24 +4,6 @@ from datetime import datetime
 
 
 
-
-
-
-
-def atualizar_hora(HRA):
-
-    HRA.clear()
-
-    data_hora_atua = datetime.now()
-    data_formatad = data_hora_atua.strftime("%d-%m-%Y - %H:%M:%S") 
-    #janela.after(60000, atualizar_hora) #valor em mseg
-
-    print(data_formatad)
-    HRA.append(data_formatad)
-
-
-
-
 # #função fechar
 # def fech():
 
@@ -114,22 +96,8 @@ def abaquartos(janela, menu, main, guardconteudo, grapc, grap):
         altdispn = tk.Entry(main)
 
 
-
-
-
-
-
-
-
-
-
-
     botaoquartos = tk.Button(menu, width= 17, text="Quartos", command= quats)
     botaoquartos.place(x=10, y=50)
 
     txtqts = tk.Label(main, font=("Arial", 16), text="Quartos na Hospedagem:")
-
-
-    
-
 

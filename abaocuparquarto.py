@@ -7,8 +7,8 @@ from Obj import *
 
 def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, main, menu, janela):
 
-    #reservando quarto
 
+    #reservando quarto
     ##função de ocupar quarto
 
     def aa(p):
@@ -38,7 +38,6 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
                     db[f"{i}"] = sla[0]
 
 
-
         with shelve.open('data/quartos.db') as db:
 
             db.clear()
@@ -46,7 +45,6 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
             for f in range(len(guardconteudo)):
 
                 db[f"{f}"] = guardconteudo[f]
-
 
 
         with shelve.open("data/registro.db") as db:
@@ -114,6 +112,7 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
 
         if a==0:
             buscr.insert(tk.END, "Cliente não encontrado")
+
 
 
     ##sincroniza o item selecionado com o objeto
@@ -188,8 +187,8 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
         for rg, nomep, cll, divida in pessoa:
 
             hospede = Cliente(rg, nomep, cll, divida)
-
             clients.append(hospede)
+
 
         rgent.delete(0, tk.END)
         cllent.delete(0, tk.END)

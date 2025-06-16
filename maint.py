@@ -30,20 +30,22 @@ print(data_formatada)
 
 
 
-
-
-
 #memória de dados
 sla = []
+
 #incluir quarto
 quartos = []
+
 #save de quartos
 guardconteudo = []
+
 #para limmpar content criado por interação
 grapc = []
 grap = []
+
 #guardar clientes
 clients = []
+
 #save de horário
 HRA = []
 
@@ -77,30 +79,6 @@ def fech():
 
     lamp()
     limp()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -153,7 +131,6 @@ def atualizar_hora():
 
     print(data_formatad)
     HRA.append(data_formatad)
-
 
 
 

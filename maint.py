@@ -2,7 +2,6 @@ import tkinter as tk
 import shelve
 from datetime import datetime
 from Obj import Quarto
-import test
 import abaregistroclientes
 import abaquartos
 import abaocuparquarto

@@ -17,9 +17,6 @@ from Obj import *
 
 def abaregistroclientes(menu, main, a, janela):
 
-    print("ok" + a)
-
-
     def regs():
 
         #fech()

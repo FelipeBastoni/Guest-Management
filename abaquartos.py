@@ -84,7 +84,7 @@ def abaquartos(janela, menu, main, guardconteudo, grapc, grap):
                     guardconteudo[y].ocpant = guardconteudo[y].ocpant
 
 
-                with shelve.open('quartos.db') as db:
+                with shelve.open('data/quartos.db') as db:
 
                     db.clear()
 

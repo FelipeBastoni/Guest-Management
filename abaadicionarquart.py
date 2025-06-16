@@ -36,7 +36,7 @@ def abaadicionarquart(main, menu, quartos, guardconteudo):
             quarto = Quarto(nome, preco, dispn, ocpant)
             quartos.append(quarto)
 
-        with shelve.open("quartos.db") as db:
+        with shelve.open("data/quartos.db") as db:
 
             for i in range(1):
 

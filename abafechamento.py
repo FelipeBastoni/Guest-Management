@@ -33,7 +33,7 @@ def abafechamento(main, menu, buscr, sla, clients):
         crc = str(sla[0].split(',',1)[0])
 
 
-        with shelve.open("Clientes.db") as db:
+        with shelve.open("data/Clientes.db") as db:
 
             for a in range(len(db)):
 
@@ -51,7 +51,7 @@ def abafechamento(main, menu, buscr, sla, clients):
 
         vl = float(valor)
 
-        with shelve.open("Clientes.db") as db:
+        with shelve.open("data/Clientes.db") as db:
 
             for p in range(len(db)):
 
@@ -83,7 +83,7 @@ def abafechamento(main, menu, buscr, sla, clients):
 
         clients.clear()
 
-        with shelve.open("Clientes.db") as db:
+        with shelve.open("data/Clientes.db") as db:
 
             for x in range(len(db)):
                 pessoas = db[f"{x}"]

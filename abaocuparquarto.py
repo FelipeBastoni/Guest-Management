@@ -28,7 +28,7 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
             guardconteudo[p].dispn = "indisponivel"
 
 
-        with shelve.open('Clientes.db') as db:
+        with shelve.open('data/Clientes.db') as db:
 
             for i in range(len(db)):
 
@@ -39,7 +39,7 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
 
 
 
-        with shelve.open('quartos.db') as db:
+        with shelve.open('data/quartos.db') as db:
 
             db.clear()
 
@@ -49,7 +49,7 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
 
 
 
-        with shelve.open("registro.db") as db:
+        with shelve.open("data/registro.db") as db:
 
             r = len(db)
             atualizar_hora()
@@ -135,7 +135,7 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
 
         crc = str(sla[0].split(',',1)[0])
 
-        with shelve.open("Clientes.db") as db:
+        with shelve.open("data/Clientes.db") as db:
 
             for a in range(len(db)):
 
@@ -196,7 +196,7 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
         ocpent2.delete(0, tk.END)
 
 
-        with shelve.open("Clientes.db") as db:
+        with shelve.open("data/Clientes.db") as db:
 
             for x in range(len(clients)):
 

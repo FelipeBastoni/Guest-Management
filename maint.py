@@ -13,13 +13,14 @@ import abaadicionarquart
 #tkinter
 
 janela= tk.Tk()
-janela.title("HospedGerenctec")
+janela.title("Hosped Gerencitec")
 janela.geometry("1000x600") 
+janela.minsize(800, 600)
 
-menu = tk.Frame(janela, width=250, bg="lightblue")
+menu = tk.Frame(janela, width=170, bg="lightblue")
 menu.pack(side=tk.LEFT, fill=tk.Y)
 
-main = tk.Frame(janela, width=700, bg="red")
+main = tk.Frame(janela, width=1500, bg="red")
 main.pack(side=tk.RIGHT, fill="both", expand="true")
 
 #Data e Hora
@@ -103,7 +104,7 @@ def fech():
 
 
 
-test.tela(janela)
+
 
 
 

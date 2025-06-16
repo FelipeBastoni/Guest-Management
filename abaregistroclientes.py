@@ -17,13 +17,13 @@ from Obj import *
 
 def abaregistroclientes(menu, main, a, janela):
 
+    print("ok" + a)
+
 
     def regs():
 
         #fech()
         #reg.place(x=10, y=50)
-
-        print("ok" + a)
 
         with shelve.open("data/registro.db") as db:
 

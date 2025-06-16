@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 
-def abafechamento(janela, main, menu, buscr, sla, clients):
+def abafechamento(main, menu, buscr, sla, clients):
 
 #aba de fechamento
 

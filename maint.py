@@ -6,7 +6,8 @@ import test
 import abaregistroclientes
 import abaquartos
 import abaocuparquarto
-
+import abafechamento
+import abaadicionarquart
 
 
 #tkinter
@@ -110,10 +111,11 @@ abaregistroclientes.abaregistroclientes(menu, main, "oiii", janela)
 
 abaquartos.abaquartos(janela, menu, main, guardconteudo, grapc, grap)
 
+abaocuparquarto.abaocuparquarto(sla, guardconteudo, clients, "asd", HRA, grapc, main, menu, janela)
 
+abafechamento.abafechamento(main, menu, "asd", sla, clients)
 
-
-
+abaadicionarquart.abaadicionarquart(main, menu, quartos, guardconteudo)
 
 
 

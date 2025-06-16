@@ -77,11 +77,11 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
         for b , c in enumerate(a):
 
                 label = tk.Label(main, font=("Arial", 16))
-                label.place(x=30, y=50*(b+2))
+                label.place(x=600, y=50*(b+2))
                 grapc.append(label)
 
                 button = tk.Button(main ,font=("Arial", 16), command= lambda c=c: aa(c), text="Ocupar")
-                button.place(x=400, y=50*(b+2), width=80, height=30)
+                button.place(x=900, y=50*(b+2), width=80, height=30)
                 grapc.append(button)
 
                 label.config(text= f"{guardconteudo[c].nome} {guardconteudo[c].preco} {guardconteudo[c].dispn}")
@@ -94,7 +94,7 @@ def abaocuparquarto(sla, guardconteudo, clients, atualizar_hora, HRA, grapc, mai
         tmpocpent.place(x=400, y=100, width=70)
         tmpocptxt.place(x=300, y=50)
         cadasbtn.place(x=10, y=300) #botão de cadastro
-        selectquart.place(x=50, y=0)
+        selectquart.place(x=600, y=0)
         conca.pack(fill=tk.xy)
 
 

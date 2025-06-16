@@ -15,7 +15,7 @@ import abaadicionarquart
 janela= tk.Tk()
 janela.title("Hosped Gerencitec")
 janela.geometry("1000x600") 
-janela.minsize(800, 600)
+janela.minsize(1200, 600)
 
 menu = tk.Frame(janela, width=170, bg="lightblue")
 menu.pack(side=tk.LEFT, fill=tk.Y)

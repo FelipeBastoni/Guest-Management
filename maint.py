@@ -106,7 +106,7 @@ test.tela(janela)
 
 
 
-abaregistroclientes.gregistro(menu, main, "oiii", janela)
+abaregistroclientes.abaregistroclientes(menu, main, "oiii", janela)
 
 abaquartos.abaquartos(janela, menu, main, guardconteudo, grapc, grap)
 

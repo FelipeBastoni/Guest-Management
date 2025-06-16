@@ -15,7 +15,7 @@ from Obj import *
 
 
 
-def gregistro(menu, main, a, janela):
+def abaregistroclientes(menu, main, a, janela):
 
 
     def regs():

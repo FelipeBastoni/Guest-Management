@@ -5,6 +5,7 @@ from Obj import Quarto
 import test
 import abaregistroclientes
 import abaquartos
+import abaocuparquarto
 
 
 

@@ -6,21 +6,11 @@ from Obj import *
 
 
 
-# função fechar
-# def fech():
-
-#     lamp()
-#     limp()
-#     reg.place_forget()
-
-
-
-def abaregistroclientes(menu, main, a, janela):
+def abaregistroclientes(menu, grap, main, a, janela):
 
     def regs():
 
-        #fech()
-        #reg.place(x=10, y=50)
+        reg.place(x=10, y=50)
 
         with shelve.open("data/registro.db") as db:
 
@@ -28,7 +18,7 @@ def abaregistroclientes(menu, main, a, janela):
 
                 hist = tk.Label(janela, font=("Arial", 16), text=f"{db[f"{a}"]}", justify="left")
                 hist.place(x=350, y=60*(a+2))
-                #grap.append(hist)
+                grap.append(hist)
 
 
 

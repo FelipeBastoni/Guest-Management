@@ -2,11 +2,11 @@ import tkinter as tk
 import shelve
 from datetime import datetime
 from Obj import Quarto
-import abaregistroclientes
-import abaquartos
-import abaocuparquarto
-import abafechamento
-import abaadicionarquart
+from abaregistroclientes import *
+from abaquartos import *
+from abaocuparquarto import *
+from abafechamento import *
+from abaadicionarquart import *
 
 
 #tkinter
@@ -74,26 +74,15 @@ def lamp():
 
 
 
-#função fechar
-def fech():
+abaocuparquarto(sla, guardconteudo, clients, "asd", HRA, grapc, main, menu, janela)
 
-    lamp()
-    limp()
+abaquartos(janela, menu, main, guardconteudo, grapc, grap)
 
+abafechamento(main, menu, "asd", sla, clients)
 
+abaregistroclientes(menu, grap, main, "oiii", janela)
 
-
-
-
-abaregistroclientes.abaregistroclientes(menu, main, "oiii", janela)
-
-abaquartos.abaquartos(janela, menu, main, guardconteudo, grapc, grap)
-
-abaocuparquarto.abaocuparquarto(sla, guardconteudo, clients, "asd", HRA, grapc, main, menu, janela)
-
-abafechamento.abafechamento(main, menu, "asd", sla, clients)
-
-abaadicionarquart.abaadicionarquart(main, menu, quartos, guardconteudo)
+abaadicionarquart(main, menu, quartos, guardconteudo)
 
 
 

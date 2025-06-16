@@ -4,15 +4,6 @@ from datetime import datetime
 
 
 
-# #função fechar
-# def fech():
-
-#     lamp()
-#     limp()  
-#     txtqts.place_forget()
-
-
-
 #lista de quartos da hospedagem
 
 
@@ -20,9 +11,6 @@ def abaquartos(janela, menu, main, guardconteudo, grapc, grap):
 
     def quats(): 
 
-
-
-        # fech()
         txtqts.place(x=10, y=50)
 
         for y in range(len(guardconteudo)):
